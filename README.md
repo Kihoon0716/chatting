@@ -19,6 +19,9 @@ pip install -r requirements.txt
 ```bash
 uvicorn app.main:app --reload
 ```
+4. 도커 이미지 빌드, 실행
+$ docker build -t chatting-backend .
+$ docker run -d --name chatting-backend -p 8002:8002 chatting-backend
 
 ## API 문서
 
